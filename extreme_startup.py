@@ -16,12 +16,13 @@ def answer():
     if "multiplied" in q:
         print (array[0] * array[1])
         return str(array[0] * array[1])
+    
+    if "largest" in q:
+        return str(array[array.index(max(array))])
+    
     else:
         return "69"
-    '''
-        if "largest" in q:
-        return array[array.index(max(array))]
-        '''
+
 
 if __name__ == "__main__":
     app.run(host='0.0.0.0')
